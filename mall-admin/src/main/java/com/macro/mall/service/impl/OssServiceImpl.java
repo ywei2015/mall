@@ -40,7 +40,7 @@ public class OssServiceImpl implements OssService {
 	@Value("${aliyun.oss.dir.prefix}")
 	private String ALIYUN_OSS_DIR_PREFIX;
 
-	@Autowired
+	//@Autowired
 	private OSSClient ossClient;
 
 	/**

@@ -5,7 +5,8 @@ spring:
     multipart:
       enabled: true #开启文件上传
       max-file-size: 10MB #限制文件上传大小为10M
-
+  application:
+    name: mall-admin
 mybatis:
   mapper-locations:
     - classpath:dao/*.xml
@@ -44,7 +45,9 @@ secure:
       - /admin/info
       - /admin/logout
       - /minio/upload
-
+      - /hello/**
+server:
+  port: 8761
 aliyun:
   oss:
     endpoint: oss-cn-shenzhen.aliyuncs.com # oss对外服务的访问域名
@@ -69,4 +72,4 @@ logging:
     root: info #日志配置DEBUG,INFO,WARN,ERROR
     com.macro.mall: debug
 #  file: demo_log.log #配置日志生成路径
-#  path: /var/logs #配置日志文件名称
+  path: /var/logs #配置日志文件名称

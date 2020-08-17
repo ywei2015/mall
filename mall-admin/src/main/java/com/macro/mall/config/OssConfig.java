@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * OSS对象存储相关配置
  * Created by macro on 2018/5/17.
  */
-@Configuration
+//@Configuration
 public class OssConfig {
     @Value("${aliyun.oss.endpoint}")
     private String ALIYUN_OSS_ENDPOINT;

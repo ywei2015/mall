@@ -6,7 +6,7 @@
     <!--应用名称-->
     <property name="APP_NAME" value="mall-admin"/>
     <!--日志文件保存路径-->
-    <property name="LOG_FILE_PATH" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/logs}"/>
+    <property name="LOG_FILE_PATH" value="/var/logs"/>
     <contextName>${APP_NAME}</contextName>
     <!--每天记录日志到文件appender-->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">

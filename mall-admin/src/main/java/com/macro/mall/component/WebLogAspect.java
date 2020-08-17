@@ -2,7 +2,6 @@ package com.macro.mall.component;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
-import cn.hutool.json.JSON;
 import cn.hutool.json.JSONUtil;
 import com.macro.mall.bo.WebLog;
 import io.swagger.annotations.ApiOperation;

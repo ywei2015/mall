@@ -1,0 +1,29 @@
+#是否需要权限拉去，默认是true,如果不false就不允许你去拉取配置中心Server更新的内容
+server:
+  port: 8082
+spring:
+  application:
+    name: config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ywei2015/my_demo.git #配置git仓库地址
+          searchPaths: springcloud/config #配置仓库路径
+          username: * #访问git仓库的用户名
+          password: abc569800752 #访问git仓库的用户密码
+      label: master #配置仓库的分支
+  kafka:
+    bootstrap-servers: 47.106.202.136:9092
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
